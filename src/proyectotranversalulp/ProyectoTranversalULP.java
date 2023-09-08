@@ -4,6 +4,9 @@
  */
 package proyectotranversalulp;
 
+import org.mariadb.jdbc.Connection;
+import proyectotranversalulp.AccesoADatos.Conectar;
+
 /**
  *
  * @author kalema
@@ -15,6 +18,7 @@ public class ProyectoTranversalULP {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Connection con=Conectar.getConectar();
     }
     
 }
