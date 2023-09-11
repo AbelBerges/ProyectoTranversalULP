@@ -11,6 +11,7 @@ import java.util.Date;
  * @author kalema
  */
 public class Alumno {
+    private int idAlumno;
     private String nombre;
     private String apellido;
     private int dni;
@@ -26,6 +27,23 @@ public class Alumno {
         this.dni = dni;
         this.fechaNacimiento = fechaNacimiento;
         this.estado = estado;
+    }
+
+    public Alumno(int idAlumno, String nombre, String apellido, int dni, Date fechaNacimiento, int estado) {
+        this.idAlumno = idAlumno;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.fechaNacimiento = fechaNacimiento;
+        this.estado = estado;
+    }
+
+    public int getIdAlumno() {
+        return idAlumno;
+    }
+
+    public void setIdAlumno(int idAlumno) {
+        this.idAlumno = idAlumno;
     }
 
     public String getNombre() {
@@ -66,6 +84,11 @@ public class Alumno {
 
     public void setEstado(int estado) {
         this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return "Alumno{" + "idAlumno=" + idAlumno + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", fechaNacimiento=" + fechaNacimiento + ", estado=" + estado + '}';
     }
     
     
