@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package proyectotranversalulp;
+
 
 import org.mariadb.jdbc.Connection;
-import proyectotranversalulp.AccesoADatos.Conectar;
+import AccesoADatos.Conectar;
 
 /**
  *
