@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author kalema
+ * @author Tomas
  */
 public class Alumno {
     private int idAlumno;
@@ -16,12 +16,12 @@ public class Alumno {
     private String apellido;
     private int dni;
     private Date fechaNacimiento;
-    private int estado;
+    private boolean estado;
 
     public Alumno() {
     }
 
-    public Alumno(String nombre, String apellido, int dni, Date fechaNacimiento, int estado) {
+    public Alumno(String nombre, String apellido, int dni, Date fechaNacimiento, boolean estado) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -29,7 +29,7 @@ public class Alumno {
         this.estado = estado;
     }
 
-    public Alumno(int idAlumno, String nombre, String apellido, int dni, Date fechaNacimiento, int estado) {
+    public Alumno(int idAlumno, String nombre, String apellido, int dni, Date fechaNacimiento, boolean estado) {
         this.idAlumno = idAlumno;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -78,11 +78,11 @@ public class Alumno {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public int getEstado() {
+    public boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 
@@ -90,6 +90,8 @@ public class Alumno {
     public String toString() {
         return "Alumno{" + "idAlumno=" + idAlumno + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", fechaNacimiento=" + fechaNacimiento + ", estado=" + estado + '}';
     }
+
+    
     
     
 }
